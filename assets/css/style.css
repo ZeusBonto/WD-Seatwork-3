@@ -4,17 +4,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Dev */
-.logo,
-.logo * {
-     outline: 1px dashed red; 
-}
-
-.content-container,
-.content-container * {
-    outline: 3px dotted gold; 
-}
-
 body {
     background-image: url(../img/Background.png);
 }
@@ -64,10 +53,24 @@ body {
             width: 13%;
             transition: all 0.2s ease;
         
-            & a.header,
-            & a.footer {
+            & a.header {
+                color: aliceblue;
+                background-color: rgb(61, 136, 80);
+                border-radius: 25%;
                 padding: 20px;
-                transition: transform 0.2s ease; /* Apply the transition to the base state */
+                transition: transform 0.2s ease;
+        
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+
+            & a.footer {
+                color: aliceblue;
+                background-color: rgb(185, 73, 73);
+                border-radius: 25%;
+                padding: 20px;
+                transition: transform 0.2s ease;
         
                 &:hover {
                     transform: scale(1.3);
