@@ -85,8 +85,63 @@ header.static-1 {
           border-right: 3px black solid;
           border-bottom: 3px black solid;
           border-radius: 25%;
-          padding-right: 5px;
           padding-right: 2px;
+          text-decoration: none;
+        }
+      }
+}
+
+.static2 {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.static-2 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/Background.png);
+
+    & > .logos {
+        & > img.slime-logo {
+            margin-left: 8vw;
+            height: 50px;
+        }
+    
+        & > img.mastery {
+            justify-content: center;
+            margin-top: 6px;
+            height: 40px;
+        }
+    }
+
+    & > nav.statnav2 {
+        margin-right: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    
+        & > a {
+          font-weight: 600;
+          font-size: 17.6px;
+          color: black;
+          border-bottom: 3px black solid;
+          border-right: 2px black solid;
+          border-top: 1px black solid;
+          border-left: 1px black solid;
+          padding-right: 5px;
+          padding-left: 3px;
           text-decoration: none;
         }
       }
