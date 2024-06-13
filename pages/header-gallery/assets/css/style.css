@@ -134,7 +134,7 @@ header.static-2 {
           font-size: 17.6px;
           color: black;
           border: 3px rgb(0, 0, 0) solid;
-          border-radius: 100%;
+          border-radius: 50px;
           padding: 5px;
           text-decoration: none;
         }
@@ -247,7 +247,7 @@ header.static-4 {
 
         & > .search {
             border: 2px black solid;
-            border-radius: 10%;
+            border-radius: 10px;
             padding-top: 1px;
             padding-bottom: 1px;
 
@@ -259,7 +259,92 @@ header.static-4 {
 
             & > img {
                 height: 15px;
+                padding-right: 5px;
+                margin-top: 1px;
             }
+        }
+    }
+}
+
+
+/* Static Design 5*/
+
+.static5 {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.static-5 {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    background-color: rgb(228, 197, 158);
+    border-top: 3px rgb(177, 152, 122) solid;
+    border-bottom: 3px rgb(177, 152, 122) solid;
+    position: relative;
+
+    & > nav.statnav5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        & > .social-medias {
+            display: flex;
+            margin-left: 1vw;
+            & > img {
+                filter: invert(0.5);
+                margin-left: 7px;
+                margin-right: 7px;
+                height: 25px;
+            }
+        }
+
+        & > .middle-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            flex-grow: 1;
+            justify-content: center;
+
+            & > div {
+                border: 3px rgb(70, 60, 47) solid;
+                background-color: rgb(175, 130, 96);
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                & > img {
+                    height: 15px;
+                }
+
+                & > a {
+                    font-weight: 400;
+                    font-size: 17.6px;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        & > .search {
+            border: 4px rgb(70, 60, 47) solid;
+            background-color: rgb(175, 130, 96);
+            padding: 5px;
+            height: 25px;
+            margin-right: 1vw;
         }
     }
 }
