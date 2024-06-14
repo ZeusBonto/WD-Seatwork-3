@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: fit-content;
-  }
+}
 
 .title {
     margin-top: 2vh;
@@ -72,14 +72,15 @@ header.static-1 {
         gap: 1rem;
 
         & > a {
-          font-weight: 600;
-          font-size: 17.6px;
-          color: black;
-          border-right: 3px black solid;
-          border-bottom: 3px black solid;
-          border-radius: 25%;
-          padding-right: 2px;
-          text-decoration: none;
+            font-family: 'Comic Neue', sans-serif;
+            font-weight: 600;
+            font-size: 19.6px;
+            color: black;
+            border-right: 3px black solid;
+            border-bottom: 3px black solid;
+            border-radius: 25%;
+            padding-right: 2px;
+            text-decoration: none;
         }
       }
 }
@@ -130,13 +131,14 @@ header.static-2 {
         gap: 1rem;
 
         & > a {
-          font-weight: 600;
-          font-size: 17.6px;
-          color: black;
-          border-radius: 8px;
-          box-shadow: 2px 2px 2px 2px;
-          padding: 5px;
-          text-decoration: none;
+            font-family: 'Bangers', sans-serif;
+            font-weight: 600;
+            font-size: 20.6px;
+            color: black;
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px 2px;
+            padding: 10px;
+            text-decoration: none;
         }
       }
 }
@@ -179,20 +181,23 @@ header.static-3 {
         gap: 1rem;
 
         & > a {
+          font-family: 'Gloria Hallelujah', sans-serif;
           background-color: rgb(199, 169, 79);
           font-weight: 600;
-          font-size: 17.6px;
+          font-size: 15.6px;
           color: rgb(255, 255, 255);
           border-right: 3px black solid;
           border-bottom: 3px black solid;
           border-top: 1px black solid;
           border-left: 1px black solid;
-          padding-left: 3px;
+          padding-left: 6px;
           padding-right: 5vw;
           text-decoration: none;
         }
 
         & > a.login{
+            font-size: 17.6px;
+            font-family: 'Poppins', sans-serif;
             background-color: red;
             border: none;
             padding: 5px;
@@ -239,6 +244,7 @@ header.static-4 {
         gap: 2rem;
 
         & > a {
+          font-family: 'Permanent Marker', sans-serif;
           font-weight: 400;
           font-size: 17.6px;
           color: rgb(255, 255, 255);
@@ -303,6 +309,7 @@ header.static-5 {
         & > .social-medias {
             display: flex;
             margin-left: 1vw;
+
             & > img {
                 filter: invert(0.5);
                 margin-left: 7px;
@@ -331,6 +338,7 @@ header.static-5 {
                 }
 
                 & > a {
+                    font-family: 'Comic Neue', sans-serif;
                     font-weight: 400;
                     font-size: 17.6px;
                     color: rgb(0, 0, 0);
@@ -419,9 +427,10 @@ header.dynamic-1 {
         transition: all 0.2s ease;
 
         & > button {
+            font-family: 'Comic Neue', sans-serif;
             background-color: rgb(214, 171, 91);
             font-weight: 600;
-            font-size: 17.6px;
+            font-size: 19.6px;
             color: black;
             border-left: none;
             border-top: none;
@@ -493,14 +502,16 @@ header.dynamic-2 {
         gap: 1rem;
 
         & > button {
+            letter-spacing: 3px;
+            font-family: 'Bangers', sans-serif;
             font-weight: 600;
-            font-size: 17.6px;
+            font-size: 20.6px;
             color: black;
             background-image: linear-gradient(180deg, rgb(187, 238, 238), rgb(159, 233, 233));
             border: none;
             border-radius: 8px;
             box-shadow: 2px 2px 2px 2px;
-            padding: 5px;
+            padding: 7px;
             transition: transform 0.2s ease-in-out;
 
             &:hover {
@@ -569,15 +580,16 @@ header.dynamic-3 {
         gap: 1rem;
 
         & > button {
+            font-family: 'Gloria Hallelujah', sans-serif;
             background-color: rgb(199, 169, 79);
             font-weight: 600;
-            font-size: 17.6px;
+            font-size: 15.6px;
             color: rgb(255, 255, 255);
             border-right: 3px black solid;
             border-bottom: 3px black solid;
             border-top: 1px black solid;
             border-left: 1px black solid;
-            padding-left: 3px;
+            padding-left: 6px;
             padding-right: 5vw;
             text-decoration: none;
             position: relative;
@@ -617,6 +629,8 @@ header.dynamic-3 {
         }
 
         & > button.login{
+            font-size: 17.6px;
+            font-family: 'Poppins', sans-serif;
             background-color: red;
             border: none;
             padding: 5px;
@@ -663,37 +677,60 @@ header.dynamic-4 {
     & > img.boots {
         margin-left: 8vw;
         height: 50px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            transform: translate(25px, -3px) rotate(-25deg);
+        }
+
+        &:active {
+            transform: translate(-25px, -5px) rotate(25deg);
+        }
     }
 
     & > nav.dynamicnav4 {
-        margin-right: 8vw;
+        margin-right: 4vw;
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 0.5rem;
 
-        & > a {
-          font-weight: 400;
-          font-size: 17.6px;
-          color: rgb(255, 255, 255);
-          text-decoration: none;
+        & > button {
+            font-family: 'Permanent Marker', sans-serif;
+            height: 100%;
+            width: 80px;
+            font-weight: 400;
+            font-size: 17.6px;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: white;
+                background-color: rgb(163, 163, 163);
+            }
         }
 
         & > .search {
+            background-color: rgb(255, 255, 255);
             border: 2px black solid;
             border-radius: 10px;
             padding-top: 1px;
-            padding-bottom: 1px;
+            padding-bottom: 3px;
+            padding-left: 6px;
+            margin-right: 4vw;
 
-            & > a.search-bar {
-                padding-left: 1vw;
+            & > input.search-bar {
                 padding-right: 4vw;
                 font-size: 15px;
+                border: 0px solid;
             }
 
             & > img {
                 height: 15px;
                 padding-right: 5px;
-                margin-top: 1px;
+                margin-top: 2px;
             }
         }
     }
@@ -743,6 +780,11 @@ header.dynamic-5 {
                     margin-left: 7px;
                     margin-right: 7px;
                     height: 25px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        filter: invert(1);
+                    }
                 }
             }
         }
@@ -755,22 +797,55 @@ header.dynamic-5 {
             justify-content: center;
 
             & > div {
+                position: relative;
                 border: 3px rgb(70, 60, 47) solid;
                 background-color: rgb(175, 130, 96);
                 padding-top: 7px;
                 padding-bottom: 7px;
                 padding-left: 10px;
                 padding-right: 10px;
+                overflow: hidden;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background: rgb(105, 78, 57);
+                    transform: scale(1.05);
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, #fff, transparent);
+                    transition: left 0.5s;
+                }
+
+                &:hover::before {
+                    left: 100%;
+                }
 
                 & > img {
                     height: 15px;
                 }
 
                 & > a {
+                    font-family: 'Comic Neue', sans-serif;
                     font-weight: 400;
                     font-size: 17.6px;
                     color: rgb(0, 0, 0);
                     text-decoration: none;
+                    letter-spacing: 2px;
+                }
+
+                &:hover > a {
+                    color: white;
+                }
+
+                &:hover > img {
+                    filter: invert(1);
                 }
             }
         }
@@ -781,6 +856,10 @@ header.dynamic-5 {
             padding: 5px;
             height: 25px;
             margin-right: 1vw;
+
+            &:hover {
+                background: rgb(105, 78, 57);
+            }
         }
     }
 }
