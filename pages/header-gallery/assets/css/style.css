@@ -56,7 +56,7 @@ header.static-1 {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(to bottom right,rgb(245, 196, 106),rgb(224, 197, 147));
+    background: linear-gradient(180deg,rgb(245, 196, 106),rgb(190, 167, 123));
     border-top: 3px rgb(175, 129, 43) solid;
     border-bottom: 3px rgb(175, 129, 43) solid;
 
@@ -115,7 +115,7 @@ header.static-2 {
             margin-left: 5vw;
             height: 50px;
         }
-    
+
         & > img.mastery {
             justify-content: center;
             margin-top: 6px;
@@ -128,13 +128,13 @@ header.static-2 {
         display: flex;
         align-items: center;
         gap: 1rem;
-    
+
         & > a {
           font-weight: 600;
           font-size: 17.6px;
           color: black;
-          border: 3px rgb(0, 0, 0) solid;
-          border-radius: 50px;
+          border-radius: 8px;
+          box-shadow: 2px 2px 2px 2px;
           padding: 5px;
           text-decoration: none;
         }
@@ -289,7 +289,7 @@ header.static-5 {
     width: 100vw;
     height: 50px;
     display: flex;
-    background-color: rgb(228, 197, 158);
+    background-image: linear-gradient(180deg, rgb(228, 197, 158), rgb(194, 164, 127));
     border-top: 3px rgb(177, 152, 122) solid;
     border-bottom: 3px rgb(177, 152, 122) solid;
     position: relative;
@@ -349,4 +349,445 @@ header.static-5 {
     }
 }
 
+.divider {
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    height: 1vh;
+    width: 100vw;
+    background-color: black;
+}
 
+
+/* Dynamic Design 1*/
+
+.dynamic1 {
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.dynamic-1 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg,rgb(245, 196, 106),rgb(190, 167, 123));
+    border-top: 3px rgb(175, 129, 43) solid;
+    border-bottom: 3px rgb(175, 129, 43) solid;
+
+    & > .image-anim {
+        display: flex;
+
+        & > img.carrot-logo {
+            margin-left: 8vw;
+            height: 50px;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: rotate(25deg);
+            }
+
+            &:active {
+                transform: translate(-50px);
+            }
+        }
+
+        & > p.dodge {
+            display: none;
+            color: aliceblue;
+            margin-top: 10px;
+        }
+
+        #carrotLogo:active ~ .dodge {
+            display: block;
+        }
+    }
+
+    & > nav.dynamicnav1 {
+        margin-right: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: all 0.2s ease;
+
+        & > button {
+            background-color: rgb(214, 171, 91);
+            font-weight: 600;
+            font-size: 17.6px;
+            color: black;
+            border-left: none;
+            border-top: none;
+            border-right: 3px black solid;
+            border-bottom: 3px black solid;
+            border-radius: 25%;
+            padding-right: 2px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                color: aliceblue;
+                border-top: 1px black solid;
+                border-left: 1px black solid;
+                padding: 3px;
+                transform: scale(1.3);
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+/* Dynamic Design 2 */
+
+.dynamic2 {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.dynamic-2 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/background.png);
+    border-top: 3px rgb(194, 194, 194) solid;
+    border-bottom: 3px rgb(194, 194, 194) solid;
+
+    & > .logos {
+        & > img.slime-logo {
+            margin-left: 5vw;
+            height: 50px;
+        }
+
+        & > img.mastery {
+            margin-top: 6px;
+            height: 40px;
+        }
+    }
+
+    & > nav.dynamicnav2 {
+        margin-right: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        & > button {
+            font-weight: 600;
+            font-size: 17.6px;
+            color: black;
+            background-image: linear-gradient(180deg, rgb(187, 238, 238), rgb(159, 233, 233));
+            border: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px 2px;
+            padding: 5px;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: translate(-3px, -3px);
+                color: rgb(98, 100, 97);
+                cursor: pointer;
+            }
+
+            &:active {
+                transform: translate(-1px, -1px);
+                box-shadow: none;
+                background-image:
+                linear-gradient(180deg,
+                rgb(151, 190, 190),
+                rgb(116, 170, 170));
+            }
+        }
+    }
+}
+
+/* Dynamic Design 3*/
+
+.dynamic3 {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.dynamic-3 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/background-yellow.jpg);
+    border-top: 2px rgb(179, 169, 86) solid;
+    border-bottom: 2px rgb(179, 169, 86) solid;
+
+    & > img.coin-logo {
+        margin-left: 8vw;
+        height: 50px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1) rotate(25deg);
+        }
+
+        &:active {
+            transform: rotateY(180deg);
+        }
+    }
+
+    & > nav.dynamicnav3 {
+        margin-right: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        & > button {
+            background-color: rgb(199, 169, 79);
+            font-weight: 600;
+            font-size: 17.6px;
+            color: rgb(255, 255, 255);
+            border-right: 3px black solid;
+            border-bottom: 3px black solid;
+            border-top: 1px black solid;
+            border-left: 1px black solid;
+            padding-left: 3px;
+            padding-right: 5vw;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            &:active {
+                transform: translate(1px, 1px);
+                border: none;
+            }
+        }
+
+        & > button > span {
+            background-color: rgb(150, 127, 58);
+            height: 100%;
+            width: 0;
+            position: absolute;
+            transition: width 0.5s;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        & > button {
+            position: relative;
+            z-index: 1;
+        }
+
+        & > button:hover > span {
+            width: 100%;
+            z-index: -1;
+        }
+
+        & > button.login{
+            background-color: red;
+            border: none;
+            padding: 5px;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+
+            &:active {
+                background-color: green;
+            }
+        }
+    }
+}
+
+
+/* Dynamic Design 4*/
+
+.dynamic4 {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.dynamic-4 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/background-grey.jpg);
+    border-top: 3px rgb(160, 160, 160) solid;
+    border-bottom: 3px rgb(160, 160, 160) solid;
+
+    & > img.boots {
+        margin-left: 8vw;
+        height: 50px;
+    }
+
+    & > nav.dynamicnav4 {
+        margin-right: 8vw;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        & > a {
+          font-weight: 400;
+          font-size: 17.6px;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+        }
+
+        & > .search {
+            border: 2px black solid;
+            border-radius: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+
+            & > a.search-bar {
+                padding-left: 1vw;
+                padding-right: 4vw;
+                font-size: 15px;
+            }
+
+            & > img {
+                height: 15px;
+                padding-right: 5px;
+                margin-top: 1px;
+            }
+        }
+    }
+}
+
+
+/* Dynamic Design 5*/
+
+.dynamic5 {
+    margin-top: 5vh;
+    margin-left: 4vw;
+    width: auto;
+    display: flex;
+
+    & > p {
+        margin-bottom: 1.5vh;
+
+        & > span {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+    }
+}
+
+header.dynamic-5 {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    background-image: linear-gradient(180deg, rgb(228, 197, 158), rgb(194, 164, 127));
+    border-top: 3px rgb(177, 152, 122) solid;
+    border-bottom: 3px rgb(177, 152, 122) solid;
+    position: relative;
+
+    & > nav.dynamicnav5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        & > .social-medias {
+            display: flex;
+            margin-left: 1vw;
+
+            & > a {
+                & > img {
+                    filter: invert(0.5);
+                    margin-left: 7px;
+                    margin-right: 7px;
+                    height: 25px;
+                }
+            }
+        }
+
+        & > .middle-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            flex-grow: 1;
+            justify-content: center;
+
+            & > div {
+                border: 3px rgb(70, 60, 47) solid;
+                background-color: rgb(175, 130, 96);
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                & > img {
+                    height: 15px;
+                }
+
+                & > a {
+                    font-weight: 400;
+                    font-size: 17.6px;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        & > .search {
+            border: 4px rgb(70, 60, 47) solid;
+            background-color: rgb(175, 130, 96);
+            padding: 5px;
+            height: 25px;
+            margin-right: 1vw;
+        }
+    }
+}
+
+.space {
+    margin-top: 7vh;
+    height: 1vh;
+    width: 100vw;
+    background-color: black;
+}
