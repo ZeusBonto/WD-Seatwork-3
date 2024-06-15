@@ -118,7 +118,6 @@ header.static-2 {
         }
 
         & > img.mastery {
-            justify-content: center;
             margin-top: 6px;
             height: 40px;
         }
