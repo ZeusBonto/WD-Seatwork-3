@@ -57,7 +57,7 @@ options in designing headers and footers.
 
 ### Key Components
 - MultiPage Website
-- Organized
+- Cool Animation
 - Interactive
 
 ### Technology
@@ -103,4 +103,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Flaticon | Icons downloaded and used are from here. | flaticon.com |
