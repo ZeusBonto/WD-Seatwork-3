@@ -478,7 +478,7 @@ header.dynamic-2 {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/background-yellow.jpg);
+    background-image: url(../img/background.png);
     border-top: 3px rgb(194, 194, 194) solid;
     border-bottom: 3px rgb(194, 194, 194) solid;
 
