@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
 
-    <img src="assets/img/Logo.png" alt="Nyebe" width="100" height="100">
+  <img src="./assets/img/Logo.png" alt="Slime" width="100" height="100">
   </a>
 
   <h3 align="center">Seatwork 3: Header & Footer</h3>
@@ -100,7 +100,6 @@ WD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
 | Flaticon | Icons downloaded and used are from here. | flaticon.com |
